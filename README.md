@@ -5,6 +5,13 @@
 
 ## Built with ♥ By https://github.com/akray08)
 
+## 404 page on any other route then '/' and '/main'
+<img width="954" alt="404" src="https://user-images.githubusercontent.com/40709301/182739395-6db0b97b-9009-4e90-8363-6ae80f466f62.PNG">
+
+## Main page fetching details of crypto api and displaying it
+<img width="964" alt="main" src="https://user-images.githubusercontent.com/40709301/182739421-92eaa5e7-c233-48c2-9339-4be1012863f9.PNG">
+
+
 
 # Getting Started with Create React App
 
