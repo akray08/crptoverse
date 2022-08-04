@@ -1,9 +1,10 @@
 # CryptoVerse with React JS, Material UI and BootStrap
 
 ## Demo
-#### Here is a working live demo :  
+#### Here is a working live demo :  https://rad-valkyrie-bd150c.netlify.app/main
 
 ## Built with ♥ By https://github.com/akray08)
+
 
 # Getting Started with Create React App
 
