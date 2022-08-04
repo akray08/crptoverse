@@ -1,7 +1,7 @@
 # CryptoVerse with React JS and BootStrap
 
 ## Demo
-#### Here is a working live demo :  https://rad-valkyrie-bd150c.netlify.app/main
+#### Here is a working live demo : https://rad-valkyrie-bd150c.netlify.app/main
 
 ## Built with ♥ By https://github.com/akray08)
 
