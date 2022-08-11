@@ -16,8 +16,22 @@ const Main = () => {
   const [binanceContentVisible, setBinanceContentVisible] = useState(false);
   const [caradonaContentVisible, setcaradonaContentVisible] = useState(false);
   const [USDCContentVisible, setUSDCContentVisible] = useState(false);
+  const coins = ["Ethereum", "Tether","Bitcoin","Binance","Caradona"];
+  const Loader = (props) => {
+    const { coins } = props;
+    const [coinIndex, setcoinIndex] = useState(0);
 
-
+    useEffect(() => {
+      let timeout;
+      if (coinIndex < coins.length - 1) {
+        timeout = setTimeout(() => setcoinIndex(coinIndex + 1), 000);
+      }
+      return () => {
+        clearTimeout(timeout);
+      };
+    }, [coins, coinIndex]);
+    return <div>{coins[coinIndex]}</div>;
+  };
   useEffect(() => {
     coin === "ethereum"
       ? setEthereumContentVisible(true)
@@ -43,17 +57,11 @@ const Main = () => {
     setCoin(e.target.value);
   };
 
-  const makeFirstLetterCapital = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+  const divStyle = {
+    display: 'flex',
+    alignItems: 'center',
   };
-
-  const renderResult = () => {
-    let result;
-    coin === "selectDreamCoin"
-      ? (result = "select your dream coin")
-      : (result = makeFirstLetterCapital(coin));
-    return result;
-  };
+  
   return (
     <div className='Main bg-dark'>
       <div className='header'>
@@ -64,8 +72,9 @@ const Main = () => {
         </div>
       </div>
       <div className="my-3 container bg-dark text-warning">
-        <div>
-          <h1 className='my-3'>Hello, {renderResult()}</h1>
+        <div style={divStyle}>
+          <p className='my-3'>Hello ,</p>
+          <Loader coins={coins} />
         </div>
         <div className="Option bg-dark text-warning">
           <select className="text-white bg-dark form-select" value={coin} onChange={handleOnChange}>
