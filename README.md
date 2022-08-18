@@ -2,9 +2,8 @@
 
 ## Demo
 
-#### Here is a working live demo with delay : https://crypto-metaverse.netlify.app
+#### Here is a working live demo with delay : https://crypto-vers.netlify.app
 
-#### Here is a working live demo : https://rad-valkyrie-bd150c.netlify.app
 
 ## Built with ♥ By https://github.com/akray08)
 
