@@ -23,9 +23,7 @@ const Main = () => {
 
     useEffect(() => {
       let timeout;
-      if (coinIndex < coins.length - 1) {
-        timeout = setTimeout(() => setcoinIndex(coinIndex + 1), 2000);
-      }
+        timeout = setTimeout(() => setcoinIndex((coinIndex + 1)%coins.length), 1000);
       return () => {
         clearTimeout(timeout);
       };
